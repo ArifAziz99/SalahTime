@@ -40,23 +40,23 @@ function displayTime(data) {
 
   // Add hijri date display
   const dateElemAR = document.createElement("div");
-  dateElemAR.className = "text-center text-3xl text-white font-bold mb-1 mt-1";
+  dateElemAR.className = "text-center text-3xl text-white font-bold bg-green-600 rounded-2xl p-2 mt-1";
   dateElemAR.textContent = `${hijriDay} | ${hijriMonth}`;
   stime.appendChild(dateElemAR);
 
   const dateElemARD = document.createElement("div");
-  dateElemARD.className = "text-center text-3xl text-white font-bold mb-2 mt-1";
+  dateElemARD.className = "text-center text-3xl text-white font-bold bg-green-500 rounded-2xl p-2";
   dateElemARD.textContent = `${hijriDate} `;
   stime.appendChild(dateElemARD);
 
     // Add gorg date display
   const dateElemEN = document.createElement("div");
-  dateElemEN.className = "text-center text-3xl text-white font-bold mb-1 ";
+  dateElemEN.className = "text-center text-3xl text-white font-bold bg-green-600 rounded-2xl p-2 mt-3";
   dateElemEN.textContent = `${gregorianDay} | ${gregorianMonth}`;
   stime.appendChild(dateElemEN);
 
   const dateElemEND = document.createElement("div");
-  dateElemEND.className = "text-center text-3xl text-white font-bold mb-10 ";
+  dateElemEND.className = "text-center text-3xl text-white font-bold bg-green-500 rounded-2xl mb-10 p-2";
   dateElemEND.textContent = `${today} `;
   stime.appendChild(dateElemEND);
 
