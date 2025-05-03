@@ -40,33 +40,25 @@ function displayTime(data) {
 
   // Add hijri date display
   const dateElemAR = document.createElement("div");
-  dateElemAR.className = "text-center text-3xl text-white font-bold bg-green-600 rounded-2xl p-2 mt-1 shadow-md";
-  dateElemAR.textContent = `${hijriDay} | ${hijriMonth}`;
+  dateElemAR.className = "text-center text-xl text-black font-bold p-2 mt-7 mb-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl cursor-pointer";
+  dateElemAR.textContent = `${hijriDay} - ${hijriMonth} - ${hijriDate}`;
   stime.appendChild(dateElemAR);
 
-  const dateElemARD = document.createElement("div");
-  dateElemARD.className = "text-center text-3xl text-white font-bold bg-green-500 rounded-2xl p-2 shadow-md";
-  dateElemARD.textContent = `${hijriDate} `;
-  stime.appendChild(dateElemARD);
 
     // Add gorg date display
   const dateElemEN = document.createElement("div");
-  dateElemEN.className = "text-center text-3xl text-white font-bold bg-green-600 rounded-2xl p-2 mt-3 shadow-md";
-  dateElemEN.textContent = `${gregorianDay} | ${gregorianMonth}`;
+  dateElemEN.className = "text-center text-xl text-black font-semibold p-2 mb-10  bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl cursor-pointer";
+  dateElemEN.textContent = `${gregorianDay} - ${gregorianMonth} - ${today}`;
   stime.appendChild(dateElemEN);
 
-  const dateElemEND = document.createElement("div");
-  dateElemEND.className = "text-center text-3xl text-white font-bold bg-green-500 rounded-2xl mb-10 p-2 shadow-md";
-  dateElemEND.textContent = `${today} `;
-  stime.appendChild(dateElemEND);
 
   // Loop through ALL timings
   for (const [key, value] of Object.entries(timings)) {
     const card = document.createElement("div");
-    card.className = "flex items-center justify-between mb-4 bg-green-500 rounded-2xl p-6 text-center shadow-md";
+    card.className = "flex items-center justify-between mb-3 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-center transition duration-300 hover:shadow-xl transform hover:scale-105 cursor-pointer";
 
-    card.innerHTML = ` <div class="text-xl text-white font-bold">${key}</div>
-        <div class="text-4xl text-white font-bold mt-2">${value}</div>`;
+    card.innerHTML = ` <div class="text-2xl text-black font-semibold">${key}</div>
+        <div class="text-3xl text-black font-bold mt-2">${value}</div>`;
 
     stime.appendChild(card);
   }

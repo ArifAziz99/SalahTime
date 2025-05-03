@@ -10,11 +10,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body onload="fetchData()">
+<body onload="fetchData()" class="bg-[url(/assets/pic.jpg)] bg-cover bg-center">
 
-    <div id="container" class="flex flex-col w-full md:w-[50vw] 2xl:w-[30vw] h-full mx-auto p-8 bg-green-400" style="border-radius: 20px;">
-        <h1 class="text-5xl text-center font-extrabold text-green-900 pb-5">Salah Times</h1>
-        <div id="stime" class=" text-3xl leading-[55px]"></div>
+    <div id="container" class="flex flex-col w-full mx-auto max-w-2xl p-8" style="border-radius: 20px;">
+        <div id="stime"></div>
     </div>
 
 </body>
