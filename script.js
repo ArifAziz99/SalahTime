@@ -40,7 +40,7 @@ function displayTime(data) {
 
   // Add hijri date display
   const dateElemAR = document.createElement("div");
-  dateElemAR.className = "text-center text-xl text-black font-bold p-2 mt-7 mb-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl cursor-pointer";
+  dateElemAR.className = "text-center text-xl text-black font-bold p-2 mt-5 mb-2 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl cursor-pointer";
   dateElemAR.textContent = `${hijriDay} - ${hijriMonth} - ${hijriDate}`;
   stime.appendChild(dateElemAR);
 
