@@ -55,7 +55,7 @@ function displayTime(data) {
   // Loop through ALL timings
   for (const [key, value] of Object.entries(timings)) {
     const card = document.createElement("div");
-    card.className = "flex items-center justify-between mb-3 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-center transition duration-300 hover:shadow-xl transform hover:scale-105 cursor-pointer";
+    card.className = "flex items-center justify-between mb-3 bg-white/30 backdrop-blur-md border border-white/20 rounded-2xl p-5 text-center transition duration-300 hover:shadow-xl transform hover:scale-105 cursor-pointer scroll-smooth";
 
     card.innerHTML = ` <div class="text-2xl text-black font-semibold">${key}</div>
         <div class="text-3xl text-black font-bold mt-2">${value}</div>`;
