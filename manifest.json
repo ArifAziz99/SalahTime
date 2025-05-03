@@ -5,7 +5,7 @@
 "start_url": "https://timeforsalah.netlify.app",
 "display": "standalone",
 "description": "A simple web app to show prayer times for your location",
-"lang": " English",
+"lang": " en-US",
 "dir": "auto",
 "theme_color": "#000000",
 "background_color": "#000000",
