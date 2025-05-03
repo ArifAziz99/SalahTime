@@ -63,3 +63,7 @@ function displayTime(data) {
     stime.appendChild(card);
   }
 }
+
+// Disable right-click and text selection
+document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('selectstart', event => event.preventDefault());
